@@ -139,21 +139,12 @@
       </div>
       {% if newsData %}
         {% for a in range(6) %}
-          {% if a == 0 or a == 3 %}
             <a href="{{newsData[a][1]}}" target="_blank ">
               <div class="col-sm-1 frame" style="margin-left: 4%;">
                 <h4 style="padding-top: 25px; font-weight: bold; height: 110px;">{{newsData[a][0]}}</h4>
                 <div style="height: 230px; border-top: 1px solid;padding-top: 10px;">{{newsData[a][2]}}</div>
               </div>
             </a>   
-          {% else %}
-            <a href="{{newsData[a][1]}}" target="_blank ">
-              <div class="col-sm-1 frame" style="margin-left: 4%;">
-                <h4 style="padding-top: 25px; font-weight: bold; height: 110px;">{{newsData[a][0]}}</h4>
-                <div style="height: 230px; border-top: 1px solid;padding-top: 10px;">{{newsData[a][2]}}</div>
-              </div>
-            </a>
-          {% endif %}
         {% endfor %}
       {% endif %}
     </div>
